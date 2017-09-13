@@ -1,0 +1,37 @@
+<configuration>
+
+	This is onTelecoms Ported Orders Processing Mechanism
+
+	<project package="gr.uit.jetexamples" 
+	         sources="C:\test" 
+	         author="Michael Mountrakis mountrakis@uit.gr"
+	         version="1.0.0"
+	         comments="Example of Live Source configuration, Enjoy...."/>
+
+
+
+
+	<database type="MySQL" connstring="jdbc:mysql://localhost/information_schema"
+		user="hellastat" pass="hellstat5" />
+
+	<table name="companies" />
+	
+	<procedure  name="prc_check_selt_test_availability"  /> <!--  class="PrcCheckSeltTestAvailability"/>  --> 
+	<procedure  name="prc_find_dslam_info" />             <!--  class="PrcFindDslamInfo"/>  --> 
+	<procedure  name="prc_k3_create_request_and_cases"/>
+	<procedure  name="prc_monitor_create_request_and_cases"/>
+
+	
+	
+	<function   name="fun_test" /> 
+	<function   name="calculate_sign_integral" /> 
+	<function   name="fun_test"  class="MyClass2"/> 
+	<function   name="fun_test"  class="MyClass3"/> 
+	
+	<!--  ORACLE ONLY 
+	<procedure package="pck_tst" name="MyFunction" class="MyClass"/> 
+ -->
+ 
+    
+
+</configuration>

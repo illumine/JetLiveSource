@@ -1,0 +1,25 @@
+<configuration>
+
+This is onTelecoms Ported Orders Processing Mechanism 
+
+<project  package="com.illumine.jetlivesource"
+          sources="C:\ONT\JetLiveSource\output" 
+          author="Michael Mountrakis mountrakis@uit.gr"
+	      version="1.0.0"
+	      comments="Example of Live Source configuration, Enjoy...."/>
+
+
+
+
+   <database  user="scott"  
+           pass="tiger" 
+           host="127.0.0.1" 
+           port="1521" 
+           sid="MIKEDB"/>
+            
+<table     name="emp" />  
+<function package="pck_tst" name="MyFunction" class="MyClass"/>
+
+
+
+</configuration>

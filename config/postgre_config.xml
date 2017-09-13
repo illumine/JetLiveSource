@@ -1,0 +1,26 @@
+<configuration>
+
+	This is onTelecoms Ported Orders Processing Mechanism
+
+	<project package="gr.uit.jetexamples" 
+	         sources="C:\test" 
+		     author="Michael Mountrakis mountrakis@uit.gr"
+	         version="1.0.0"
+	         comments="Example of Live Source configuration, Enjoy...."/>
+
+
+	<database type="POSTGRESQL" connstring="jdbc:postgresql://localhost:5432/postgres"
+		user="postgres" pass="qweasd" />
+ 
+	<table name="weather" />
+  
+  	
+	<function    name="fun_no_args"        /><!-- class="FunNoArgs"/> -->
+	<function    name="fun_check_weather"  /><!-- class="FunCheckWeather"/> -->
+	<function    name="fun_check_weather1" /><!-- class="FunCheckWeather1"/> -->
+	<function    name="fun_add_numbers"    /><!-- class="FunAddNumbers"/> -->
+
+ 
+    
+
+</configuration>

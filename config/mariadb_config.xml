@@ -1,0 +1,44 @@
+<configuration>
+
+	This is onTelecoms Ported Orders Processing Mechanism
+
+	<project package="gr.illumine.docreview.jdbc" 
+	         sources="C:\test" 
+	         author="Michael Mountrakis mountrakis@illumine.gr"
+	         version="1.0.0"
+	         comments="Example of Live Source configuration, Enjoy...."/>
+
+
+
+
+	<database type="MariaDB" connstring="jdbc:mariadb://localhost:3306/information_schema"
+		user="root" pass="qweasd" />
+		<table name="author" />
+		<table name="document" />
+		<table name="review" />
+		<table name="reviewer" />
+		<procedure  name="proc_insert_document"/>
+		<procedure  name="proc_insert_review"/>
+		 
+<!--  ORACLE ONLY 
+	<table name="companies" />
+	
+	<procedure  name="prc_check_selt_test_availability"  /> 
+	<procedure  name="prc_find_dslam_info" />            
+	<procedure  name="prc_k3_create_request_and_cases"/>
+	<procedure  name="prc_monitor_create_request_and_cases"/>
+
+	
+	
+	<function   name="fun_test" /> 
+	<function   name="calculate_sign_integral" /> 
+	<function   name="fun_test"  class="MyClass2"/> 
+	<function   name="fun_test"  class="MyClass3"/> 
+ -->	
+	<!--  ORACLE ONLY 
+	<procedure package="pck_tst" name="MyFunction" class="MyClass"/> 
+ -->
+ 
+    
+
+</configuration>
