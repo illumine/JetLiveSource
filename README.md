@@ -55,23 +55,23 @@ See the example configuration
 </configuration>
 ```
 
-_Generated Java Code Settings_   
-package: the Java package the generated source will belong. Your project's packaging    
-sources: the directory to put the generated sources     
-author: self explanatory :-)    
-version: the version to appear on the sources as a comment.     
-comments: some comments regarding this configuration. Will appear as comments on the sources.    
+`project` _Generated Java Code Settings_   
+`package`: the Java package the generated source will belong. Your project's packaging    
+`sources`: the directory to put the generated sources     
+`author`: self explanatory :-)    
+`version`: the version to appear on the sources as a comment.     
+`comments`: some comments regarding this configuration. Will appear as comments on the sources.    
 
 
-_Target Database details -  Connection Settings_    
-type : MariDB database parser to be used for DB Object translation.   
-connstring: how to connect to the MariaDB      
-procedure : The Oracle Package and Store Procedure that will be called.    
+`database` _Target Database details -  Connection Settings_    
+`type` : MariDB database parser to be used for DB Object translation.   
+`connstring`: how to connect to the MariaDB      
+`procedure` : The Oracle Package and Store Procedure that will be called.    
 
 _Target Database details - Database Objects to generate code for _       
-_table_ : generate DAO/Adapter Java Class for this table or view    
-_procedure_  : generate Adapter Java Class for this procedure    
-_function_  : generate Adapter Java Class for this database function     
+`table` : generate DAO/Adapter Java Class for this table or view    
+`procedure`  : generate Adapter Java Class for this procedure    
+`function`  : generate Adapter Java Class for this database function     
 
 
 This program also uses log4j. To configure the Log4J please edit the Log4J Properties file ./cls/log4j.properties
