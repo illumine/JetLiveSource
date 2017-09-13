@@ -1,11 +1,14 @@
 # JetLiveSource
-JDBC Code Generator - implementation of Java DAO pattern   
+JDBC Code Generator - Generates Java JDBC code in order to call DB Records, Tables, Procedures and Functions.   
+Implementation of Java Data Access Object - DAO/Adapter pattern   
 
 ## Java JDBC Code Generation 
-* Stub Class with 1-1 relationship with a Database Record having Getter/Setter methods to handle private attributes/record fields
-* Stub Class for DAO implementing methods, search/retrieve/retrieve array/edit/update/delete
-* Stub Class for Functione/Procedure call with methods signature 1-1 mapping of arguments in procedure/functions
-* Auto implementation - no need to provide mapping of types.
+
+* Tables: Creates the Java Stub Class with 1-1 relationship with a Database Record having Getter/Setter methods to handle private attributes/record fields
+* Tables: Creates the Java Stub Class for DAO implementing methods, search/retrieve/retrieve array/edit/update/delete  
+* Procedures: Creates the Java Class for Procedure call with methods signature 1-1 mapping of arguments in procedure   
+* Functions: Creates the Java Class for Function call with methods signature 1-1 mapping of arguments in function   
+* Auto implementation - no need to provide XML mapping of types.  
 
 ## Compatible Databases
 * Oracle Server
@@ -13,10 +16,22 @@ JDBC Code Generator - implementation of Java DAO pattern
 * MariaDB 
 * PostGre SQL Server
 
-See the example configuration
+## Build
+Apache Ant is required.
+<pre>
+git clone https://github.com/illumine/JetLiveSource
+cd JetLiveSource
+ant build
+....
+</pre>
+
+## Dependencies
+* Log4j
+* JDBC drivers for MariaDB, Oracle MySQL, Oracle Server, PostGre SQL 
 
 ## Usage
-**Step 1: Configure the database source in the XML configuration file:**
+**Step 1: Configure the database source in the XML configuration file:**    
+See the example configuration   
 ```xml
 <configuration>
   Project specific info
