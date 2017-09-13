@@ -10,14 +10,14 @@ Implementation of Java Data Access Object - DAO/Adapter pattern
 * Functions: Creates the Java Class for Function call with methods signature 1-1 mapping of arguments in function   
 * Auto implementation - no need to provide XML mapping of types.  
 
-## Compatible Databases
-* Oracle Server
-* Oracle MySQL
-* MariaDB 
-* PostGre SQL Server
+## Compatible Databases 
+* Oracle Server, Requires http://www.oracle.com/technetwork/apps-tech/jdbc-112010-090769.html
+* Oracle MySQL, Requires https://dev.mysql.com/downloads/connector/j/
+* MariaDB, Requires https://downloads.mariadb.org/connector-java/ 
+* PostGre SQL Server, Requires https://jdbc.postgresql.org/
 
 ## Build
-Apache Ant is required.
+Eclipse build is required.
 <pre>
 git clone https://github.com/illumine/JetLiveSource
 cd JetLiveSource
@@ -26,8 +26,9 @@ ant build
 </pre>
 
 ## Dependencies
-* Log4j
+* Log4j jar
 * JDBC drivers for MariaDB, Oracle MySQL, Oracle Server, PostGre SQL 
+* Old versions of those can be found in [depend_libs](https://github.com/illumine/JetLiveSource/tree/master/depend_libs) directory
 
 ## Usage
 **Step 1: Configure the database source in the XML configuration file:**    
