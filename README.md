@@ -31,7 +31,9 @@ ant build
 
 ## Usage
 **Step 1: Configure the database source in the XML configuration file:**    
-See the example configuration   
+Create a simple XML configuration file like those in ./config directory.   
+
+See the following example configuration:    
 ```xml
 <configuration>
   Project specific info
@@ -93,6 +95,7 @@ This program also uses log4j. To configure the Log4J please edit the Log4J Prope
 
 
 **Step 2: Run JetLiveSource against the target DB:**
+Main Class : gr.illumine.jetlivesource.LiveSource.java  
 <pre>
 src> java gr.illumine.jetlivesource.LiveSource config/mariadb_config.xml
 
@@ -240,15 +243,14 @@ public static  ProcInsertDocumentProc   callProcInsertDocument(
 
 
 
-## Author
+## Author - Licencing
 
 Jet Live Source  (TM) Illumine Consulting www.illumine.gr   
 JDBC Code Generator   
 Author Michael Mountrakis    
 https://www.linkedin.com/profile/view?illumine    
 
+Licence - See https://github.com/illumine/JetLiveSource/blob/master/IllumineITConsultingPublicLicense1_0.txt 
 
-Main Class : gr.illumine.jetlivesource.LiveSource.java
 
 
-Provide a simple configuration file like those in ./config
