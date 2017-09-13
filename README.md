@@ -17,7 +17,7 @@ See the example configuration
 
 ## Usage
 **Step 1: Configure the database source in the XML configuration file:**
-<pre>
+```xml
 <configuration>
   Project specific info
 	<project package="gr.illumine.docreview.jdbc" 
@@ -53,7 +53,7 @@ See the example configuration
 	<procedure package="pck_tst" name="MyFunction" class="MyClass"/> 
 
 </configuration>
-</pre>
+```
 
 _Project Settings_
 package: the Java package the generated source will belong. Your project's packaging
